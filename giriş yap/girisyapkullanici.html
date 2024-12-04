@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feelserotonin Giris Yap</title>
+    <style>
+    html{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #f0f0f0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        /*background-image: url('loginkapak.png');
+        background-position: 50% 50%;
+        background-size: 120% 120%;
+        background-repeat: no-repeat;*/
+    }
+    #labelUserName{
+    display: block;
+    position: relative;
+    margin-top: 3%;
+    font-size: 18px;
+    height: 20px;
+    width: 250px;
+    font-family: Helvetica, Arial, sans-serif;
+    }
+    input[type=text],[type=password]{
+    display: block;
+    position: relative;
+    margin-top: 6%;
+    height: 40px;
+    width: 350px;
+    }
+    #labelPassword{
+    display: block;
+    position: relative;
+    margin-top: 10%;
+    font-size: 18px;
+    height: 20px;
+    width: 250px;
+    font-family: Helvetica, Arial, sans-serif;
+    }
+    .buttonSubmit{
+    display: block;
+    position: relative;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 8% auto 0 auto;
+    height: 40px;
+    width: 150px;
+    font-weight: 700;
+    cursor: pointer;
+    }
+    .buttonSubmit:hover{
+    background-color: #45a049;
+    }
+    .forgatandregis{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0;
+    }
+    .userIndicator{
+    display: block;
+    font-size: 20px;
+    margin: 4% 0 3%;
+    }
+    .enterTypeChangerR{
+    font-size: 20px;
+    color: #121413;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    }
+    .enterTypeChangerL{
+    font-size: 20px;
+    color: #121413;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    }
+    .enterTypeChangerL:hover{
+    background-color: #ffd633;
+    border-radius: 5px 0 0 0;
+    }
+    .enterTypeChangerR:hover{
+    background-color: #ffd633;
+    border-radius: 0 5px 0 0;
+    }
+    .deneme{
+    display: grid; 
+    grid-template-rows: 12.5% 80% 7.5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;  
+    height: 80%;
+    width: 35%;
+    margin-top: 0;
+    }
+    .deneme-item-1{
+    display: grid;
+    /*grid-template-columns: 49.5% 1% 49.5%;*/    
+    background-color: #ffcc00;   
+    /*border: solid;
+    border-width: 4px;*/
+    border-radius: 5px 5px 0 0;  
+    }
+    .deneme-item-2{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFF;
+    /*border: solid;
+    border-color: black;
+    border-top: 0;
+    border-width: 4px;*/
+    border-bottom: 0;
+    }
+    .deneme-item-3{
+    background-color: #272323;
+    display:flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: center;  
+    border-radius: 0 0 5px 5px; 
+    }
+    .middleLine{
+    background-color: #000000;
+    height: 100%;
+    width: 100%;
+    }
+    .loginDiv{
+    position:  relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: antiquewhite;*/
+    height: 80%;
+    width: 100%;
+    }
+    input[type=text]:focus {
+     border: 3px solid #555;
+    }
+    </style>
+</head>
+<body>
+  <div class="deneme">
+     <div class="deneme-item-1">
+      <!--<div>
+            <a class="enterTypeChangerL" href="logindeneme.php">
+                Kullanıcı Girişi
+            </a>
+      </div>
+      <div class="middleLine">
+      
+      </div> -->
+      <div>
+      
+            <a class="enterTypeChangerR" href="egitmenlogin.php">
+                Eğitmen Girişi
+            </a>
+       
+     </div>
+   </div>
+   <div class="deneme-item-2">
+     <h2 class="userIndicator">
+        KULLANICI GİRİŞİ
+     </h2>
+     <div class="loginDiv">
+     <form class="input-login" name="usersLogin" method="post">
+        <label for="userName" id="labelUserName"><strong>Kullanıcı Adınızı Giriniz:</strong></label>
+        <input type="text" name="userName" placeholder="Kullanıcı Adınız">
+        <label for="password" id="labelPassword"><strong>Şifrenizi Giriniz:</strong></label>
+        <input type="password" name="password" placeholder="Şifreniz">
+        <button type="submit" class="buttonSubmit" name="girisYap">Giriş Yap</button>
+       </form>
+    </div>
+   </div>
+   <div class="deneme-item-3">
+     <a href="../kayit ol/kullanicikayit.php" class="forgatandregis"><b>Kayıt Ol</b></a>
+     <a href="#" class="forgatandregis"><b>Şifremi Unuttum</b></a>
+     </div>
+   </div>
+</body>
+</html>

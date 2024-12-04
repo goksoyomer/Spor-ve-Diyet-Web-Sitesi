@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+   }
+   html{
+    height: 100%;
+    width: 100%;
+   }
+   body{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+   }
+   #header{
+    background-color: #981616;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex; 
+    flex-wrap: nowrap;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+   #headerSiteName{
+    background-color: #165798;
+    height: 60px;
+    width: 240px;
+    margin-left: 75px;
+   }
+   #siteName{
+    font-family: Ubuntu;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+   #leftNavBar{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    /*box-shadow: 0 0 56px 5px rgba(0, 0, 0, .25);*/
+    justify-content: space-around;
+    background-color: #E5E4E2;
+    left: 0px;
+    width: 0px;
+    margin-top: 60px;
+    height: calc(100% - 60px);
+    position: fixed;
+    transition: 0.5s;
+    z-index: 1;
+   }
+   .leftNavUl{
+    height:100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+   }
+   .leftNavUl > li{
+    display: block;
+    height: 100%;
+    border-style: solid;
+    border-color: black;
+    border-right: 0;
+    border-left: 0;  
+   }
+   .leftNavUl > li:nth-child(n){
+    border-top: 0;
+   }
+   /*.leftNavUl > li:last-child{
+    border-bottom: 1px;
+   }*/
+   .leftNavUl > li > a{
+    color: #000000;
+    text-decoration: none;
+    display:flex;
+    height:100%;
+    padding-right: 5px;
+    padding-left: 5px;
+   }
+   .leftNavUl > li > a > img{
+    display: inline-block;
+    padding-top: 10%;
+    max-height: 40px;
+    max-width: 40px;
+   }
+    /*.leftnavul > li > a > img{
+    height: 100px;
+    width: 100px;
+    }*/
+   .leftNavUl > li > a > span{
+    display: inline-block;
+    margin-left: 8%;
+    padding: 15% 0;
+   }
+   .leftNavUl > li > a > span > b{
+    font-family: Tahoma, sans-serif;
+   }
+   .leftNavUl > li > a:hover{
+    background-color: #F5F5F5;
+   }
+   #openNavBar{
+     margin-left: 5px;
+     font-size: 40px;
+     cursor: pointer;
+   }
+   .loginout{
+    display: flex;
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px
+   }
+   #loginText{
+    margin-left: 2%;
+    padding: 1.2% 0;
+   }
+   #regisandlogout{
+    margin-left: 2%;
+    padding: 1.2% 0;
+   }
+   .fa-cart-shopping{
+    padding-top: 30px;
+   }
+   .shoppingLogo{
+    margin-left: 55%;
+   }
+   .fa-bell{
+    padding-top: 30px;
+   }
+    #notificationBell{
+    margin-left: 2%;
+   }
+   #notifyDiv{
+    height: 0px;
+    width: 0px;
+    left: 0px; 
+    top: 0px;
+    /*border-radius: ;*/
+    margin-top: 200px;
+    margin-left: 200px;
+    position: fixed;
+    background: rgb(166,166,189);
+    background: linear-gradient(0deg, rgba(166,166,189,1) 0%, rgba(166,166,189,1) 50%, rgba(166,166,189,1) 100%);
+    clip-path: polygon(50% 0, 60% 12%, 100% 12%, 100% 100%, 0 100%, 0 12%, 40% 12%);
+   }
